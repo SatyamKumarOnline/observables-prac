@@ -16,6 +16,6 @@
 </select>
 
 <div>
-  You selected: {{currSelectedContinent}}:::::{{currSelectedCountry}}
+  You selected: {{continentDropdown.valueChanges | async}}:::::{{countryDropDown.valueChanges | async}}
 </div>
 <router-outlet></router-outlet>
