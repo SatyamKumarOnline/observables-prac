@@ -8,3 +8,8 @@ export interface ItemList {
     total : number;
     data: Item[];
 }
+
+export interface Country {
+    "country": String,
+    "continent": String
+}

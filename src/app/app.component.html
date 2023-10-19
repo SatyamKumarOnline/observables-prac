@@ -3,12 +3,19 @@
 </h2>
 
 <select [formControl]="continentDropdown">
+  <option> Europe </option>
   <option> Asia </option>
   <option> Africa </option>
   <option> N America </option>
 </select>
 
+<select [formControl]="countryDropDown">
+  <option *ngFor="let item of countryList">
+    {{item.country}}
+  </option>
+</select>
+
 <div>
-  You selected: {{currSelectedContinent}}
+  You selected: {{currSelectedContinent}}:::::{{currSelectedCountry}}
 </div>
 <router-outlet></router-outlet>
